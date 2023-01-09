@@ -5,11 +5,11 @@
         <div class="row">
             @foreach ($movies as $movie)
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h1 class="card-title">{{ $movie->title }}</h1>
-                            <p class="card-text">{{ $movie->original_title }}</p>
-                            <p class="card-text">{{ $movie->vote }}</p>
+                    <div class="cards">
+                        <div class="cards-body">
+                            <h1 class="cards-title">{{ $movie->title }}</h1>
+                            <p class="cards-text">{{ $movie->original_title }}</p>
+                            <p class="cards-text">{{ $movie->vote }}</p>
                         </div>
                     </div>
                 </div>
