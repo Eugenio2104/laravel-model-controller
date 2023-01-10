@@ -19,3 +19,5 @@ Route::get(uri: '/', action: [PageController::class, 'index'])->name(name: 'home
 Route::get(uri: '/chi-siamo', action: [PageController::class, 'about'])->name(name: 'about');
 
 Route::get(uri: '/movies', action: [PageController::class, 'movies'])->name(name: 'movies');
+
+Route::get(uri: '/movie-detail/{id}', action: [PageController::class, 'movieDetail'])->name(name: 'movieDetail');

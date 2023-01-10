@@ -7,7 +7,9 @@
                 <div class="col-4">
                     <div class="cards">
                         <div class="cards-body">
-                            <h1 class="cards-title">{{ $movie->title }}</h1>
+                            <a href="{{ route('movieDetail', $movie->id) }}">
+                                <h1 class="text-white">{{ $movie->title }}</h1>
+                            </a>
                             <p class="cards-text">{{ $movie->original_title }}</p>
                             <p class="cards-text">{{ $movie->vote }}</p>
                         </div>
